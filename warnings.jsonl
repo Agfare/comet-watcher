@@ -1,11 +1,3 @@
-{"file": "test1.txt", "source": "Hello world", "mt_output": "Hola mundo", "reference": "Hola, mundo", "comet_score": 0.7543, "warning": true}
-{"file": "test2.txt", "source": "I love programming", "mt_output": "Me encanta programar", "reference": null, "comet_score": 0.5605, "warning": true}
-{"file": "test3.txt", "source": "This is a test sentence", "mt_output": "Esto es prueba sentarse", "reference": "Esta es una frase de prueba", "comet_score": 0.7064, "warning": true}
-{"file": "test.txt", "source": "The cat is on the mat", "mt_output": "El perro está en el cielo", "reference": "El gato está en la alfombra", "comet_score": 0.5818, "warning": true}
-{"file": "test1.txt", "source": "Hello world", "mt_output": "Hola mundo", "reference": "Hola, mundo", "comet_score": 0.7543, "warning": true}
-{"file": "test2.txt", "source": "I love programming", "mt_output": "Me encanta programar", "reference": null, "comet_score": 0.5605, "warning": true}
-{"file": "test3.txt", "source": "This is a test sentence", "mt_output": "Esto es prueba sentarse", "reference": "Esta es una frase de prueba", "comet_score": 0.7064, "warning": true}
-{"file": "test.txt", "source": "The cat is on the mat", "mt_output": "El perro está en el cielo", "reference": "El gato está en la alfombra", "comet_score": 0.5818, "warning": true}
-{"file": "test.txt", "source": "The cat is on the mat", "mt_output": "El perro está en el cielo", "reference": "El gato está en la alfombra", "comet_score": 0.6229, "warning": true}
 {"file": "test2.txt", "source": "I love programming", "mt_output": "Me encanta programar", "reference": null, "comet_score": 0.6552, "warning": true}
 {"file": "test3.txt", "source": "This is a test sentence", "mt_output": "Esto es prueba sentarse", "reference": "Esta es una frase de prueba", "comet_score": 0.5232, "warning": true}
+{"file": "test.txt", "source": "The cat is on the mat", "mt_output": "El perro está en el cielo", "reference": "El gato está en la alfombra", "comet_score": 0.6229, "warning": true}

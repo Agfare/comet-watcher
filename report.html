@@ -30,12 +30,12 @@
 </head>
 <body>
   <h1>COMET Report</h1>
-  <div class=sub>Updated: 2025-08-31 10:51:17 • Model: <code>Unbabel/wmt22-comet-da</code> • Threshold: <b>0.8</b></div>
+  <div class=sub>Updated: 2025-08-31 17:43:11 • Model: <code>Unbabel/wmt22-comet-da</code> • Threshold: <b>0.8</b></div>
 
   <div class=cards>
-    <div class=card><div class=kpi>12</div><div>Total evaluated</div></div>
-    <div class=card><div class=kpi>11 <span class="pill bad">below</span></div><div>Below threshold</div></div>
-    <div class=card><div class=kpi>0.6651</div><div>Average score</div></div>
+    <div class=card><div class=kpi>6</div><div>Total evaluated</div></div>
+    <div class=card><div class=kpi>3 <span class="pill bad">below</span></div><div>Below threshold</div></div>
+    <div class=card><div class=kpi>0.7489</div><div>Average score</div></div>
   </div>
 
   <h2>All Results</h2>
@@ -44,47 +44,33 @@
       <tr><th>File</th><th>Source</th><th>MT Output</th><th>Reference</th><th>Score</th></tr>
     </thead>
     <tbody>
-      <tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
-<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
-<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
-<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
-<tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
-<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
-<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
-<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
-<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.6229</td></tr>
-<tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score ok'>0.9744</td></tr>
+      <tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score ok'>0.9744</td></tr>
 <tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.6552</td></tr>
 <tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.5232</td></tr>
+<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.6229</td></tr>
+<tr><td class=mono>test4.txt</td><td>The quick brown fox jumps over the lazy dog.</td><td>Der schnelle braune Fuchs springt über den faulen Hund.</td><td>Der flinke braune Fuchs springt über den faulen Hund.</td><td class='score ok'>0.9107</td></tr>
+<tr><td class=mono>test5.txt</td><td>The quick brown fox jumps over the lazy dog.</td><td>Der schnelle braune Fuchs springt über den Hund.</td><td>Der flinke braune Fuchs springt über den faulen Hund.</td><td class='score ok'>0.8068</td></tr>
     </tbody>
   </table>
 
   <details open>
-    <summary>⚠️ Warnings (below 0.8) — 11</summary>
+    <summary>⚠️ Warnings (below 0.8) — 3</summary>
     <table>
       <thead><tr><th>File</th><th>Source</th><th>MT Output</th><th>Reference</th><th>Score</th></tr></thead>
       <tbody>
-        <tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
-<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
-<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
-<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
-<tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
-<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
-<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
-<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
-<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.6229</td></tr>
-<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.6552</td></tr>
+        <tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.6552</td></tr>
 <tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.5232</td></tr>
+<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.6229</td></tr>
       </tbody>
     </table>
   </details>
 
   <details>
-    <summary>⏭️ Skipped files — 0</summary>
+    <summary>⏭️ Skipped files — 1</summary>
     <table>
       <thead><tr><th>File</th><th>Reason</th><th>Lines</th></tr></thead>
       <tbody>
-        
+        <tr><td class=mono>Nuevo Text Document.txt</td><td>Insufficient lines</td><td class=mono>[]</td></tr>
       </tbody>
     </table>
   </details>
