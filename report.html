@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMET Report</title>
+<style>
+  :root { --warn:0.8; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; color: #111; }
+  h1 { margin: 0 0 4px 0; }
+  .sub { color:#666; margin-bottom: 16px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 12px; margin: 12px 0 20px; }
+  .card { background:#f8f9fb; border:1px solid #e6e8ee; border-radius:12px; padding:14px; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
+  .kpi { font-size: 26px; font-weight: 700; }
+  .kpi small { font-size: 12px; font-weight: 500; color:#555; margin-left: 6px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border-bottom: 1px solid #eee; padding: 8px 10px; vertical-align: top; }
+  th { text-align: left; background:#fafbfc; position: sticky; top: 0; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; white-space: nowrap; }
+  .score { text-align:right; font-weight: 700; }
+  .score.ok { color: #0a773a; }
+  .score.bad { color: #b00020; }
+  .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:600; }
+  .pill.ok { background:#e9f7ef; color:#0a773a; }
+  .pill.bad { background:#fdecea; color:#b00020; }
+  details { margin: 10px 0 18px; }
+  summary { cursor: pointer; font-weight: 600; }
+  footer { color:#777; font-size:12px; margin-top:22px; }
+</style>
+</head>
+<body>
+  <h1>COMET Report</h1>
+  <div class=sub>Updated: 2025-08-29 13:24:10 • Model: <code>Unbabel/wmt22-comet-da</code> • Threshold: <b>0.8</b></div>
+
+  <div class=cards>
+    <div class=card><div class=kpi>8</div><div>Total evaluated</div></div>
+    <div class=card><div class=kpi>8 <span class="pill bad">below</span></div><div>Below threshold</div></div>
+    <div class=card><div class=kpi>0.6507</div><div>Average score</div></div>
+  </div>
+
+  <h2>All Results</h2>
+  <table>
+    <thead>
+      <tr><th>File</th><th>Source</th><th>MT Output</th><th>Reference</th><th>Score</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
+<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
+<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
+<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
+<tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
+<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
+<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
+<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
+    </tbody>
+  </table>
+
+  <details open>
+    <summary>⚠️ Warnings (below 0.8) — 8</summary>
+    <table>
+      <thead><tr><th>File</th><th>Source</th><th>MT Output</th><th>Reference</th><th>Score</th></tr></thead>
+      <tbody>
+        <tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
+<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
+<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
+<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
+<tr><td class=mono>test1.txt</td><td>Hello world</td><td>Hola mundo</td><td>Hola, mundo</td><td class='score bad'>0.7543</td></tr>
+<tr><td class=mono>test2.txt</td><td>I love programming</td><td>Me encanta programar</td><td></td><td class='score bad'>0.5605</td></tr>
+<tr><td class=mono>test3.txt</td><td>This is a test sentence</td><td>Esto es prueba sentarse</td><td>Esta es una frase de prueba</td><td class='score bad'>0.7064</td></tr>
+<tr><td class=mono>test.txt</td><td>The cat is on the mat</td><td>El perro está en el cielo</td><td>El gato está en la alfombra</td><td class='score bad'>0.5818</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details>
+    <summary>⏭️ Skipped files — 0</summary>
+    <table>
+      <thead><tr><th>File</th><th>Reason</th><th>Lines</th></tr></thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </details>
+
+  <footer>Generated automatically by the folder watcher. Open this file directly in your browser.</footer>
+</body>
+</html>
