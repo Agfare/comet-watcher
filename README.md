@@ -66,7 +66,7 @@ You can customize the script's behavior by editing the constants at the top of t
 
 1.  **Clone the Repository**:
     ```bash
-    git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
+    git clone git@github.com:USERNAME/comet-watcher.git
     cd your-repo
     ```
 2.  **Install Dependencies**:
